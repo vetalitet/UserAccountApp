@@ -8,14 +8,20 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.vetalitet.useraccountapp.R
+import com.vetalitet.useraccountapp.databinding.FragmentLoginBinding
+import com.vetalitet.useraccountapp.databinding.FragmentProfileBinding
 
 class LoginFragment : Fragment() {
 
+    private lateinit var binding: FragmentLoginBinding
+
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_login, container, false)
+    ): View {
+        binding = FragmentLoginBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -6,8 +6,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.vetalitet.useraccountapp.presentation.login.LoginFragment"
-        android:label="Login">
+        android:name="com.vetalitet.useraccountapp.presentation.login.LoginFragment">
         <action
             android:id="@+id/action_loginFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
@@ -15,7 +14,6 @@
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.vetalitet.useraccountapp.presentation.profile.ProfileFragment"
-        android:label="Profile" />
+        android:name="com.vetalitet.useraccountapp.presentation.profile.ProfileFragment" />
 
 </navigation>
