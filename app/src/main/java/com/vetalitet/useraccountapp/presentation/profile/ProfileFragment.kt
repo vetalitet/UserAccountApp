@@ -29,10 +29,10 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initToolbar()
+        //initToolbar()
     }
 
-    private fun initToolbar() {
+    /*private fun initToolbar() {
         ViewCompat.setOnApplyWindowInsetsListener(binding.toolbar) { view, insets ->
             val params = view.layoutParams as ViewGroup.MarginLayoutParams
             params.topMargin = insets.getInsets(WindowInsetsCompat.Type.statusBars()).top
@@ -42,7 +42,7 @@ class ProfileFragment : Fragment() {
         binding.toolbar.setNavigationOnClickListener {
             findNavController().popBackStack()
         }
-    }
+    }*/
 
     companion object {
         @JvmStatic

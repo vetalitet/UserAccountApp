@@ -7,6 +7,7 @@ import com.vetalitet.useraccountapp.data.entities.User
 import com.vetalitet.useraccountapp.domain.repository.UserRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -19,7 +20,7 @@ class LoginViewModel @Inject constructor(
     private val _userFlow = MutableStateFlow<UiState<User>>(UiState.Success(null))
     val userFlow: Flow<UiState<User>> = _userFlow
 
-    private val _loginFlow = MutableStateFlow<UiState<Boolean>>(UiState.Loading)
+    private val _loginFlow = MutableSharedFlow<UiState<Boolean>>()
     val loginFlow: Flow<UiState<Boolean>> = _loginFlow
 
     fun loadUser() {

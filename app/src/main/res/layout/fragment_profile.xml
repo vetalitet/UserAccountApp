@@ -6,12 +6,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.profile.ProfileFragment">
 
-    <com.google.android.material.appbar.MaterialToolbar
+    <!--<com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:navigationIcon="@drawable/ic_arrow_left"
-        app:title="Profile" />
+        app:title="Profile" /> -->
 
     <TextView
         android:layout_width="match_parent"

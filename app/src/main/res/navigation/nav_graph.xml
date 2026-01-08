@@ -9,7 +9,9 @@
         android:name="com.vetalitet.useraccountapp.presentation.login.LoginFragment">
         <action
             android:id="@+id/action_loginFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
     <fragment

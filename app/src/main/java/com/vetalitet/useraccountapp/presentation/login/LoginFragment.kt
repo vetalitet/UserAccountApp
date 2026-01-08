@@ -48,8 +48,7 @@ class LoginFragment : BaseFragment() {
     private fun handleResults() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.loginFlow.collect { state ->
-                    when (state) {
+                viewModel.loginFlow.collect { state -> when (state) {
                         is UiState.Success -> {
                             state.result?.let { res ->
                                 if (res) {

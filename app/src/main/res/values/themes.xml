@@ -11,6 +11,27 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/light_gray</item>
         <!-- Customize your theme here. -->
+    </style>
+    <style name="Widget.App.TextInputLayout"
+        parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">?attr/colorPrimary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+    </style>
+    <style name="Widget.App.TextInputEditText"
+        parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Widget.App.MaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
     </style>
 </resources>
